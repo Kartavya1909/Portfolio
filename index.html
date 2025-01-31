@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kartavya Rathore | Portfolio</title>
+
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+    --bg-image: url('https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+}
+ 
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .hero {
+            margin-top: 50px;
+            padding: 50px 0;
+        }
+        
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        .cta-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        .section {
+            
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .skills-container, .projects-container {
+           
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        .skill, .project {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .skill, 
+.dark-mode .project {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode footer {
+    background-color: black;
+}
+
+.dark-mode a {
+    color: #ecefed; /* More visible in dark mode */
+}
+
+        .dark-mode-toggle {
+            position: relative;
+            top: 15px;
+            right: 15px;
+            padding: 10px;
+            cursor: pointer;
+            background: #130a01;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            margin: 50px;
+            padding: 4px 5px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column justify-content-center w-100 h-100">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hi, I'm Kartavya Rathore</h1>
+            <p>Welcome to my personal website</p>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm Kartavya, a passionate Computer Science Student, Developer. 
+            I love building things and learning new technologies. 
+            Welcome to my personal site where you can learn more about me and the work I do.
+        </p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Java, Python, C, C++, HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="skill">
+                <h3>Tools & Technologies</h3>
+                <p>MS Office, Git etc.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A Stone-Paper-Scissor game in python using opencv and mediapipe to access camera and detect hand gestures as stone paper or scissors and play the game accordingly </p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A GUI based To-Do-List inpython using streamlit to keep track of day-to-day tasks.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>email: <a href=" mailto: pritikartavya1909@gmail.com">pritikartavya1909@gmail.com</a></p>
+        <p>github: <a href="https://github.com/Kartavya1909">github</a></p>
+
+    </section>
+
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        window.onload = function () {
+            if (localStorage.getItem("dark-mode") === "true") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            let isDarkMode = document.body.classList.contains("dark-mode");
+            localStorage.setItem("dark-mode", isDarkMode);
+        }
+
+        
+        if (localStorage.getItem("dark-mode") === "true") {
+            document.body.classList.add("dark-mode");
+        }
+
+        function highlight(element) {
+            element.style.background = "lightgray";
+        }
+        function removeHighlight(element) {
+            element.style.background = "white";
+        }
+
+        window.addEventListener("scroll", () => {
+            document.querySelector(".back-to-top").style.display = window.scrollY > 300 ? "block" : "none";
+        });
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 Kartavya Rathore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
